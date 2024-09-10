@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Music Player</title>
+    <link rel="stylesheet" href="musicstyles.css">
+</head>
+<body>
+    <div class="player-container">
+        <div class="player-controls">
+            <button id="prev-btn">Prev</button>
+            <button id="play-btn">Play</button>
+            <button id="pause-btn">Pause</button>
+            <button id="next-btn">Next</button>
+            <input type="range" id="volume-control" min="0" max="1" step="0.01" value="1">
+        </div>
+        <div class="player-info">
+            <h2 id="song-title">No song playing</h2>
+        </div>
+        <div class="playlist">
+            <input type="text" id="search-box" placeholder="Search songs...">
+            <ul id="playlist">
+              <iframe src="c:\Users\Tushar\Downloads\soulmate_ringtone.mp3"></iframe>
+                <!-- Playlist items will be added here -->
+            </ul>
+        </div>
+    </div>
+    <audio id="audio-player" src=""></audio>
+    <script src="musicscript.js"></script>
+</body>
+</html>
